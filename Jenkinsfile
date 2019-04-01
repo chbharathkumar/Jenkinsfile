@@ -7,8 +7,7 @@ stages{
         {
       steps{
           script{
-           sh 'node --version'
-           sh 'svn --version'
+               sh 'mvn install'
                 }
             }
          }
