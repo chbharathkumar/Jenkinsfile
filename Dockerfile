@@ -1,3 +1,4 @@
-FROM node:7-alpine
+FROM maven
 
-RUN apk add -U subversion
+COPY . .
+RUN mvn clean install
